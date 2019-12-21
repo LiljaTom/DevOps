@@ -1,0 +1,18 @@
+FROM ruby:latest
+
+RUN apt-get update -qq && apt-get -y install nodejs
+
+WORKDIR /myapp
+
+COPY Gemfile /myapp/Gemfile
+
+COPY Gemfile.lock /myapp/Gemfile.lock
+
+RUN bundle install
+
+COPY . /
+
+
+RUN rails db:migrate
+
+CMD rails s

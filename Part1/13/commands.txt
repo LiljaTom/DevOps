@@ -1,0 +1,5 @@
+git clone https://github.com/docker-hy/spring-example-project.git
+
+docker build -t dockerjava .
+
+docker run -p 8080:8080 dockerjava

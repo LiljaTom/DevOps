@@ -1,0 +1,8 @@
+docker run devopsdockeruh/exec_bash_exercise
+
+docker exec -it dreamy_shannon bash
+
+tail -f ./logs.txt
+
+Secret message: "Docker is easy"
+
