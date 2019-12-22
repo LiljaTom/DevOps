@@ -1,0 +1,1 @@
+I edited Gemfile's ruby version to 2.6.5

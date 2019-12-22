@@ -1,4 +1,4 @@
-docker pull devops devopsdockeruh/first_volume_exercise
+docker pull devopsdockeruh/first_volume_exercise
 
 touch logs.txt
 

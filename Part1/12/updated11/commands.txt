@@ -2,7 +2,4 @@ git clone https://github.com/docker-hy/backend-example-docker.git
 
 docker build -t backend .
 
-touch logs.txt
-
-docker run -p 8000:8000 -v $(pwd)/logs.txt:/usr/src/app/logs.txt backend
-
+docker run -p 8000:8000 backend

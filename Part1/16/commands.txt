@@ -1,0 +1,7 @@
+docker pull devopsdockeruh/heroku-example
+
+docker tag devopsdockeruh/heroku-example registry.heroku.com/stark-beach-71009/web
+
+docker push registry.heroku.com/stark-beach-71009/web
+
+heroku container:release web
